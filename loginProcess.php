@@ -11,7 +11,10 @@ if (isset($_POST['save'])) {
         $_SESSION["name"] = $row['name'];
        header("Location: ajax.dashboard.php");
     } else {
-        echo "Invalid Email ID/Password";
+        //echo "Invalid Email ID/Password";
+       ?>
+       <script> alert ("Invalid Email ID/Password"); window.location.href = "loginProcess.php";</script>
+       <?php
     }
 }
 ?>

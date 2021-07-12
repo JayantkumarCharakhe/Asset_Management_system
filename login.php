@@ -27,8 +27,9 @@ session_start();
                 <div class="signup-form">
                     <form action="loginProcess.php" method="post" enctype="multipart/form-data">
                         <h2>Login</h2>
-                        <p class="hint-text">Enter Login Details</p>
+                        <p class="hint-text"><b>Asset Management System</b></p>
                         <div class="form-group">
+                        <fieldset>                
                             <input type="email" class="form-control" name="email" placeholder="Email" required="required">
                         </div>
                         <div class="form-group">
@@ -37,6 +38,7 @@ session_start();
                         <div class="form-group">
                             <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Login</button>
                         </div>
+                        </fieldset>
                         <div class="text-center">Don't have an account? <a href="register.php">Register Here</a></div>
                     </form>
                 </div>
